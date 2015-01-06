@@ -7,6 +7,7 @@ class Rational(n: Int, d: Int) {
   override def toString = n + "/" + d
   def num:Int = _num
   def denom:Int = _denom
+  def + (that:Rational):Rational = new Rational(this.num * that.denom + that.num * this.denom, this.denom * that.denom)
 }
 
 
